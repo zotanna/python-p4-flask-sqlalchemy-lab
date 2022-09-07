@@ -41,7 +41,8 @@ Instructions begin here:
   using Flask-SQLAlchemy and Flask-Migrate.
 - Your database should represent a zoo. There should be three tables: `animals`,
   `zookeepers`, and `enclosures`.
-- The `Animal` model should contain a `name`, a `species`, and an `enclosure`.
+- The `Animal` model should contain a `name`, a `species`, a `zookeeper`, and
+  an `enclosure`.
 - The `Zookeeper` model should contain a `name`, a `birthday`, and a list of
   `animals` that they take care of.
 - The `Enclosure` model should contain an `environment` (grass, sand, or water),
