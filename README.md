@@ -54,8 +54,29 @@ Instructions begin here:
 - Each view should display all attributes as line items (`ul`). If there is a
   one-to-many relationship, each of the many should have its own line item.
 
+A seed script, `app/seed.py`, has been provided to generate test data once your
+models have been built and migrated to a database.
+
 Once all of your tests are passing, commit and push your work using `git` to
 submit.
+
+### Examples
+
+#### Animal View
+
+![animal ID 1, name Dean, species Elephant, zookeeper Allison Reynolds,
+enclosure trees](
+https://curriculum-content.s3.amazonaws.com/python/animal-view.png)
+
+#### Zookeeper View
+
+![zookeeper name Paul Smith, birthday 1983-10-10, 7 animals](
+https://curriculum-content.s3.amazonaws.com/python/zookeeper-view.png)
+
+#### Enclosure View
+
+![enclosure with cave environment, not open to visitors, 11 animals](
+https://curriculum-content.s3.amazonaws.com/python/enclosure-view.png)
 
 ***
 
