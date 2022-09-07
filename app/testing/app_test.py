@@ -1,4 +1,4 @@
-from app.app import app
+from app import app
 
 class TestApp:
     '''Flask application in flask_app.py'''
@@ -8,5 +8,3 @@ class TestApp:
         response = app.test_client().get('/')
         assert(response.status_code == 200)
 
-    def test_():
-        pass

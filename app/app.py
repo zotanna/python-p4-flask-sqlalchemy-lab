@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from math import e
 from flask import Flask, make_response
 from flask_migrate import Migrate
 
