@@ -39,6 +39,10 @@ Instructions begin here:
 
 - Design a Flask application that displays information from a database created
   using Flask-SQLAlchemy and Flask-Migrate.
+- `flask db init` has already been run. You will need to direct your Flask app
+  to a database at `db/app.db`, create models, run a migration with `flask db
+  revision --autogenerate -m'<your message>'` and create the database file with
+  `flask db upgrade`.
 - Your database should represent a zoo. There should be three tables: `animals`,
   `zookeepers`, and `enclosures`.
 - The `Animal` model should contain a `name`, a `species`, a `zookeeper`, and
