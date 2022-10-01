@@ -33,7 +33,13 @@
 This is a **test-driven lab**. Run `pipenv install` to create your virtual
 environment and `pipenv shell` to enter the virtual environment. Then run
 `pytest -x` to run your tests. Use these instructions and `pytest`'s error
-messages to complete your work in the `app/` folder.
+messages to complete your work in the `app/` folder. Remember to set up your
+environment from the `app/` directory:
+
+```console
+$ export FLASK_APP=app.py
+$ export FLASK_RUN_PORT=5555
+```
 
 Instructions begin here:
 
