@@ -33,20 +33,14 @@
 This is a **test-driven lab**. Run `pipenv install` to create your virtual
 environment and `pipenv shell` to enter the virtual environment. Then run
 `pytest -x` to run your tests. Use these instructions and `pytest`'s error
-messages to complete your work in the `app/` folder. Remember to set up your
-environment from the `app/` directory:
-
-```console
-$ export FLASK_APP=app.py
-$ export FLASK_RUN_PORT=5555
-```
+messages to complete your work in the `app/` folder.
 
 Instructions begin here:
 
 - Design a Flask application that displays information from a database created
   using Flask-SQLAlchemy and Flask-Migrate.
 - `flask db init` has already been run. You will need to direct your Flask app
-  to a database at `db/app.db`, create models, run a migration with `flask db
+  to a database at `app.db`, create models, run a migration with `flask db
   revision --autogenerate -m'<your message>'` and create the database file with
   `flask db upgrade`.
 - Your database should represent a zoo. There should be three tables: `animals`,
