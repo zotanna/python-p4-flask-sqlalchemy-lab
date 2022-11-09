@@ -57,10 +57,9 @@ Instructions begin here:
   respectively.
 - Each view should display all attributes as line items (`ul`). If there is a
   one-to-many relationship, each of the many should have its own line item.
-
-A seed script, `app/seed.py`, has been provided to generate test data once your
-models have been built and migrated to a database. Make sure to run this so that
-there are resources for the test suite to visit.
+- A seed script, `app/seed.py`, has been provided to generate test data once your
+  models have been built and migrated to a database. Make sure to run this so
+  that there are resources for the test suite to visit.
 
 Once all of your tests are passing, commit and push your work using `git` to
 submit.
