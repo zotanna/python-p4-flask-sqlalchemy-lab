@@ -69,19 +69,22 @@ submit.
 
 #### Animal View
 
-![animal ID 1, name Dean, species Elephant, zookeeper Allison Reynolds,
+![animal ID 1, name Logan, species Snake, zookeeper Dylan Taylor,
 enclosure trees](
-https://curriculum-content.s3.amazonaws.com/python/animal-view.png)
+https://curriculum-content.s3.amazonaws.com/python/flask-sqlalchemy-lab-1.png
+)
 
 #### Zookeeper View
 
-![zookeeper name Paul Smith, birthday 1983-10-10, 7 animals](
-https://curriculum-content.s3.amazonaws.com/python/zookeeper-view.png)
+![zookeeper name Stephanie Contreras, birthday 1996-9-20, 6 animals](
+https://curriculum-content.s3.amazonaws.com/python/flask-sqlalchemy-lab-2.png
+)
 
 #### Enclosure View
 
-![enclosure with cave environment, not open to visitors, 11 animals](
-https://curriculum-content.s3.amazonaws.com/python/enclosure-view.png)
+![enclosure with pond environment, not open to visitors, 8 animals](
+https://curriculum-content.s3.amazonaws.com/python/flask-sqlalchemy-lab-3.png
+)
 
 ***
 
