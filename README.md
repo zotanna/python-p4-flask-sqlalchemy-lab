@@ -33,7 +33,7 @@
 This is a **test-driven lab**. Run `pipenv install` to create your virtual
 environment and `pipenv shell` to enter the virtual environment. Then run
 `pytest -x` to run your tests. Use these instructions and `pytest`'s error
-messages to complete your work in the `app/` folder.
+messages to complete your work in the `server/` folder.
 
 Instructions begin here:
 
@@ -57,7 +57,7 @@ Instructions begin here:
   respectively.
 - Each view should display all attributes as line items (`ul`). If there is a
   one-to-many relationship, each of the many should have its own line item.
-- A seed script, `app/seed.py`, has been provided to generate test data once your
+- A seed script, `server/seed.py`, has been provided to generate test data once your
   models have been built and migrated to a database. Make sure to run this so
   that there are resources for the test suite to visit.
 
