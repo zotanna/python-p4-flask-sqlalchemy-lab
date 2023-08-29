@@ -1,10 +1,21 @@
 from os import environ
 import re
 
-from app import app
+from app import app, db
+from server.models import Animal, Enclosure, Zookeeper
 
 class TestApp:
-    '''Flask application in flask_app.py'''
+    '''Flask application in app.py'''
+
+    with app.app_context():
+        a_1 = Animal()
+        a_2 = Animal()
+        e = Enclosure()
+        z = Zookeeper()
+        e.animals = [a_1, a_2]
+        z.animals = [a_1, a_2]
+        db.session.add_all([a_1, a_2, e, z])
+        db.session.commit()
 
     def test_animal_route(self):
         '''has a resource available at "/animal/<id>".'''
@@ -51,13 +62,8 @@ class TestApp:
         animal_ul = re.compile(r'\<ul\>Animal.+')
         
         id = 1
-        animals_bool = False
-        while not animals_bool:
-            response = app.test_client().get(f'/zookeeper/{id}')
-            if len(animal_ul.findall(response.data.decode())):
-                animals_bool = True
-
-        assert(animals_bool)
+        response = app.test_client().get(f'/zookeeper/{id}')
+        assert len(animal_ul.findall(response.data.decode()))
 
     def test_enclosure_route(self):
         '''has a resource available at "/enclosure/<id>".'''
@@ -79,10 +85,5 @@ class TestApp:
         animal_ul = re.compile(r'\<ul\>Animal.+')
         
         id = 1
-        animals_bool = False
-        while not animals_bool:
-            response = app.test_client().get(f'/enclosure/{id}')
-            if len(animal_ul.findall(response.data.decode())):
-                animals_bool = True
-
-        assert(animals_bool)
+        response = app.test_client().get(f'/enclosure/{id}')
+        assert len(animal_ul.findall(response.data.decode()))
